@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Urbanist:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
     <title>Productos - Mateando así</title>
 </head>
 <body>
@@ -19,87 +20,118 @@
         <h1>Mateando así</h1>
     </header>
 
-    <nav>
-        <ul>
-            <li class="barraNavegacion"><a href="../index.html" class="link">Home</a></li>
-            <li class="barraNavegacion"><a href="quienessomos.html" class="link">¿Quiénes somos?</a></li> 
-            <li class="barraNavegacion"><a href="productos.html" class="link">Productos</a></li>  
-            <li class="barraNavegacion"><a href="faq.html" class="link">¿Dudas?</a></li>
-            <li class="barraNavegacion"><a href="contactanos.html" class="link">Contactanos</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="menu container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quienessomos.html">¿Quiénes somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">¿Dudas?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactanos.html">Contactanos</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 
     <main>
         <h2>Nuestros productos</h2>
 
-        <div class="bloqueSecundario">
-            <div class="subBloques subBloques--productoUno">
-                <img src="../images/mateVidrio.JPG" alt="">
-                <p class="detalle">Mate de cuero y vidrio con un retrato</p>
-                <p class="detalle">$1650</p>
-            </div>
-    
-            <div class="subBloques subBloques--productoDos">
-                <img src="../images/mateCalabazaRetrato.JPG" alt="">
-                <p class="detalle">Mate de cuero y calabaza con un retrato</p>
-                <p class="detalle">$2650</p>
-            </div>
-    
-            <div class="subBloques subBloques--productoTres">
-                <img src="../images/mateCalabazaPersonalizado.JPG" alt="">
-                <p class="detalle">Mate de cuero y calabaza con diseño a elección</p>
-                <p class="detalle">$1300</p>
-            </div>
-    
-            <div class="subBloques subBloques--productoCuatro">
-                <img src="../images/mateMadera.JPG" alt="">
-                <p class="detalle">Mate de madera con diseño a elección</p>
-                <p class="detalle">$1000</p>
-            </div>
-    
-            <div class="subBloques subBloques--productoCinco">
-                <img src="../images/mateMaderaRetrato.jpeg" alt="">
-                <p class="detalle">Mate de madera con un retrato</p>
-                <p class="detalle">$1350</p>
-            </div>
-    
-            <div class=" subBloques subBloques--productoSeis">
-                <img src="../images/tablaAlgarrobo.JPG" alt="">
-                <p class="detalle">Tabla 15x40 de algarrobo</p>
-                <p class="detalle">$1000</p>
-            </div>
-    
-            <div class="subBloques subBloques--productoSiete">
-                <img src="../images/tablaRetrato.JPG" alt="">
-                <p class="detalle">Tabla de algarrobo con un retrato</p>
-                <p class="detalle">$1000</p>
-            </div>
-    
-            <div class="subBloques subBloques--productoOcho">
-                <img src="../images/tablaPremiumMadera.JPG" alt="">
-                <p class="detalle">Tabla 15x40 Premium de madera calden</p>
-                <p class="detalle">$1500</p>
-            </div>
-    
-            <div class="subBloques subBloques--productoNueve">
-                <img src="../images/yerberoAzucarero.JPG" alt="">
-                <p class="detalle">Yerbero y azucarero de color</p>
-                <p class="detalle">$650</p>
-            </div>
-    
-            <div class="subBloques subBloques--productoDiez">
-                <img src="../images/dispenser.JPG" alt="">
-                <p class="detalle">Dispenser de hasta 1kg de yerba</p>
-                <p class="detalle">$2500</p>
-            </div>
-    
-            <div class="aclaracion">
-                <p class="tip">Todos los mates pueden ser con hasta 3 mascotas. El retrato adicional sale $500</p>
-            </div>
+        <div class="container-fluid bloqueSecundario">
+            <div class="card" >
+                <img src="../images/mateVidrio.JPG" class="card-img-top" alt="Mate de cuero y vidrio con un retrato">
+                <div class="card-body">
+                  <p class="detalle card-title">Mate de cuero y vidrio con un retrato<br>$1650</p>
+                  <a href="#" class="btn btn-primary" id="comprar">Comprar</a>
+                </div>
+            </div>         
+            <div class="card">
+                <img src="../images/mateCalabazaRetrato.JPG" class="card-img-top" alt="Mate de cuero y calabaza con un retrato">
+                <div class="card-body">
+                  <p class="detalle card-title">Mate de cuero y vidrio con un retrato<br>$2650</p>
+                  <a href="#" class="btn btn-primary" id="comprar">Comprar</a>
+                </div>
+            </div>    
+            <div class="card" >
+                <img src="../images/mateCalabazaPersonalizado.JPG" class="card-img-top" alt="Mate de cuero y calabaza con diseño a elección">
+                <div class="card-body">
+                  <p class="detalle card-title">Mate de cuero y calabaza con diseño a elección<br>$1300</p>
+                  <a href="#" class="btn btn-primary" id="comprar">Comprar</a>
+                </div>
+            </div>    
+            <div class="card" >
+                <img src="../images/mateMadera.JPG" class="card-img-top" alt="Mate de madera con diseño a elección">
+                <div class="card-body">
+                  <p class="detalle card-title">Mate de madera con diseño a elección<br>$1000</p>
+                  <a href="#" class="btn btn-primary" id="comprar">Comprar</a>
+                </div>
+            </div>    
+            <div class="card" >
+                <img src="../images/mateMaderaRetrato.jpeg" class="card-img-top" alt="Mate de madera con un retrato">
+                <div class="card-body">
+                  <p class="detalle card-title">Mate de madera con un retrato<br>$1350</p>
+                  <a href="#" class="btn btn-primary" id="comprar">Comprar</a>
+                </div>
+            </div> 
+            <div class="card" >
+                <img src="../images/tablaAlgarrobo.JPG" class="card-img-top" alt="Tabla 15x40 de algarrobo">
+                <div class="card-body">
+                  <p class="detalle card-title">Tabla 15x40 de algarrobo<br>$1000</p>
+                  <a href="#" class="btn btn-primary" id="comprar">Comprar</a>
+                </div>
+            </div> 
+            <div class="card" >
+                <img src="../images/tablaRetrato.JPG" class="card-img-top" alt="Tabla de algarrobo con un retrato">
+                <div class="card-body">
+                  <p class="detalle card-title">Tabla de algarrobo con un retrato<br>$1000</p>
+                  <a href="#" class="btn btn-primary" id="comprar">Comprar</a>
+                </div>
+            </div> 
+            <div class="card" >
+                <img src="../images/tablaPremiumMadera.JPG" class="card-img-top" alt="Tabla 15x40 Premium de madera calden">
+                <div class="card-body">
+                  <p class="detalle card-title">Tabla 15x40 Premium de madera calden<br>$1500</p>
+                  <a href="#" class="btn btn-primary" id="comprar">Comprar</a>
+                </div>
+            </div> 
+            <div class="card" >
+                <img src="../images/yerberoAzucarero.JPG" class="card-img-top" alt="Tabla 15x40 Premium de madera calden">
+                <div class="card-body">
+                  <p class="detalle card-title">Yerbero y azucarero de color<br>$650</p>
+                  <a href="#" class="btn btn-primary" id="comprar">Comprar</a>
+                </div>
+            </div> 
+            <div class="card" >
+                <img src="../images/dispenser.JPG" class="card-img-top" alt="Dispenser de hasta 1kg de yerba">
+                <div class="card-body">
+                  <p class="detalle card-title">Dispenser de hasta 1kg de yerba<br>$2500</p>
+                  <a href="#" class="btn btn-primary" id="comprar">Comprar</a>
+                </div>
+            </div> 
+            
+        </div>        
+        <div class="aclaracion">
+            <p class="tip">Todos los mates pueden ser con hasta 3 mascotas. El retrato adicional sale $500</p>
         </div>
-        <!--<div class="lineaAnimacion"> 
 
-        </div>--> 
     </main>
 
     <footer>

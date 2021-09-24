@@ -27,21 +27,52 @@ h1{
 h2{
     font-size: 40px;
     font-family: 'Urbanist', sans-serif;
-    margin: 40px 0px 0px 30px ;
+    margin: 40px 0px 0px 30px !important;
     color: #7B3F23;
 }
 
-nav{
-    background-color: #777165;
+.bg-light{
+    background-color: #777165 !important; 
     height: 50px;
     position: sticky;
     top: 0px;
     margin-top: 0px;   
 }
 
-a{
-    color: #F6E8DC;
+.menu{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+.navbar-toggler{
+    margin-bottom: 10px;
+}
+
+.navbar-brand{
+    margin-bottom: 5px;
+}
+
+.nav-link, .active, .navbar-brand{
+    color: #F6E8DC !important; 
     text-decoration: none;
+    font-weight: 100;
+}
+
+.navbar> .container-fluid{
+    background-color: #777165;
+    position: sticky; 
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdown-menu{
+    z-index: 1;
+    background-color: #fff;
 }
 
 ul{
@@ -54,20 +85,12 @@ ul{
 }
 
 body{
-    background-color: rgb(248, 248, 233);
+    background-color: rgb(248, 248, 233) !important;
 }
 
 p{
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
-}
-
-img{
-    height: 300px;
-    width: 200px;
-    border-radius: 10px;
-    margin: 20px  auto;  
-    
 }
 
 video{
@@ -92,16 +115,52 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 0px 30px 0px 30px;
-    /*background-image: linear-gradient(beige, #777165);*/
+}
+
+img{
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.card-img-top{
+    height: 300px;
+    width: 200px !important;
+    border-radius: 10px;
+    margin: 20px  auto;  
+}
+
+.d-flex{
+    margin: 10px 5px 0px 0px;
+}
+
+.form-control{
+    height: 40px;
+}
+
+.btn-outline-success{
+    color: #F6E8DC !important;
+    border-color: #F6E8DC !important;
+}
+
+.btn-outline-success:hover{
+    background-color: #F6E8DC !important;
+    color: #42403b !important; 
+    border-color: #F6E8DC !important;
+}
+
+.btn {
+    margin: 0px 0px 10px 10px;
 }
 
 .bloquePrincipal{
-    /*justify-items: center;*/
     margin: 40px 0px 60px 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
+    
 }
 
 .imagenBombilla{
@@ -110,18 +169,12 @@ footer{
 }
 
 .bloqueSecundario{
-    margin: 50px 0px 50px 50px;
-    display: grid; 
-    grid-template-columns: 30% 30% 30%; 
-    grid-template-rows: 400px 400px 400px 400px 100px; 
-    gap: 40px 25px; 
-    grid-template-areas: 
-                        "productoUno    productoDos   productoTres"
-                        "productoCuatro productoCinco productoSeis"
-                        "productoSiete  productoOcho  productoNueve"
-                        ".              productoDiez  ."
-                        "aclaracion     aclaracion    aclaracion"; 
-  
+    margin: 40px 0px 60px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .detalle{
@@ -132,64 +185,27 @@ footer{
     grid-area: aclaracion;
 }
 
-.subBloques--productoUno{
-    grid-area: productoUno;
+.card-body{
+    flex: 1 1 auto;
+    padding: 0px;
 }
 
-.subBloques--productoDos{
-    grid-area: productoDos;
-}
-
-.subBloques--productoTres{
-    grid-area: productoTres;
-}
-
-.subBloques--productoCuatro{
-    grid-area: productoCuatro;
-}
-
-.subBloques--productoCinco{
-    grid-area: productoCinco;
-}
-
-.subBloques--productoSeis{
-    grid-area: productoSeis;
-}
-
-.subBloques--productoSiete{
-    grid-area: productoSiete;
-}
-
-.subBloques--productoOcho{
-    grid-area: productoOcho;
-}
-
-.subBloques--productoNueve{
-    grid-area: productoNueve;
-}
-
-.subBloques--productoDiez{
-    grid-area: productoDiez;
-}
-
-.subBloques{
-    height: 360px;
+.card{
+    height: 500px !important;
     width: 300px;
     margin: 20px 5px 20px 5px; 
     background-color:white;
-    padding:10px 10px 40px 10px;
     border:1px solid #f1efef;
     border-radius: 10px;
     display: flex;
     align-content: space-between;
     flex-direction: column;
+    z-index: -1;
 }
 
 .promo{
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 0px 250px 60px;
     background-color:white;
     padding: 10px;
     border:1px solid #f1efef;
@@ -230,7 +246,7 @@ footer{
     margin: 20px 0 20px 60px
 }
 
-.barraNavegacion{
+.nav-item{
     font-family: 'Urbanist', sans-serif;
     display: flex;
     align-content: center;
@@ -247,7 +263,8 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 40px 0px 60px 0px;
+    margin-top: 40px;
+    margin-bottom: 60px;
 }
 
 .bombilla{
@@ -257,6 +274,35 @@ footer{
 .botones{
     display: inline-block;
     margin-left: 190px;
+}
+
+
+.btn-primary, #comprar{
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #42403b;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-primary:hover{
+    background-color: #fff;
+    box-shadow: 0px 15px 20px #42403b;
+    color: #fff;
+    transform: translateY(-3px);
+    cursor: pointer;
 }
 
 .enviar, .borrar{
@@ -278,6 +324,8 @@ footer{
     cursor: pointer;
     outline: none;
 }
+
+
 
 .tip{
     font-style: italic;
@@ -341,6 +389,7 @@ footer{
     margin-right: 10px;
 }
 
+
 .link:hover{
     transition-duration: 200ms;
     color: white;
@@ -351,11 +400,11 @@ footer{
     transform: scale(1.1,1.1);
 }
 
-.barraNavegacion:hover{
+.nav-item:hover{
     transition-duration: 500ms;
 }
 
-.barraNavegacion:hover, .barraNavegacion:focus{
+.nav-item:hover, .nav-item:focus{
     background-size: 100% 2px;
 }
 

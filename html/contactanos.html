@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Urbanist:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilo.css">
     <title>Contactanos - Mateando así</title>
 </head>
 <body>
@@ -18,48 +20,77 @@
         <h1>Mateando así</h1>
     </header>
 
-    <nav>
-        <ul>
-            <li class="barraNavegacion"><a href="../index.html" class="link">Home</a></li>
-            <li class="barraNavegacion"><a href="quienessomos.html" class="link">¿Quiénes somos?</a></li> 
-            <li class="barraNavegacion"><a href="productos.html" class="link">Productos</a></li>  
-            <li class="barraNavegacion"><a href="faq.html" class="link">¿Dudas?</a></li>
-            <li class="barraNavegacion"><a href="contactanos.html" class="link">Contactanos</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="menu container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quienessomos.html">¿Quiénes somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">¿Dudas?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactanos.html">Contactanos</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
 
     <main>
         <h2>Contactate con nosotras</h2>
-        <div class="form">
-            <form action="">
-                <label for="nombreUsuario"><p>Nombre</p> </label>
-                <input type="text" placeholder="" class="nombreUsuario">
-                <br>
-                <label for="correoElectronicoUsuario"><p>Correo Electrónico</p></label>
-                <input type="text" placeholder="" class="mailUsuario">
-                <br>
-                <p>Asunto</p>
-                <select name="" class="opcion">
-                    <option value="">----</option>
-                    <option value="">Consultar stock</option>
-                    <option value="">Métodos de pago</option>
-                    <option value="">Envíos</option>
-                    <option value="">Devoluciones</option>
-                    <option value="">Otro</option>
-                </select>
-                <br>
-                <label for="mensaje"><p>Mensaje</p></label>
-                <textarea name="" class="comentario" cols="30" rows="10"></textarea>
-                <br>
-                <div class="mayorista">
-                    <input type="checkbox" class="checkbox"><p>Soy mayorista</p>
+
+        <div class="form container">
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"><p>Nombre</p></label>
+                    <input type="nombre" class="form-control" id="exampleInputName1">
+                  </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"><p>Correo Electrónico</p></label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">Nunca compartiremos tu correo con nadie.</div>
                 </div>
-                <br>
-                <div class="botones">
+                <div class="dropdown">
+                    <p>Asunto</p>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      ----
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Métodos de pago</a></li>
+                      <li><a class="dropdown-item" href="#">Consultar stock</a></li>
+                      <li><a class="dropdown-item" href="#">Devoluciones</a></li>
+                      <li><a class="dropdown-item" href="#">Otro</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <label for="mensaje"><p>Mensaje</p></label><br>
+                    <textarea name="" class="comentario" cols="30" rows="10"></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Soy mayorista</label>
+                </div>
+                <div class="botones mb-3 form-check">
                     <input type="submit" value="Enviar" class="enviar"><br>
                     <input type="reset" value="Borrar" class="borrar">
                 </div>
-                
             </form>
         </div>
     </main>
