@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,10 +10,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Preguntas Frecuentes - Mateando así</title>
 </head>
 <body>
+
     <header>
         <a href="../index.html"><img src="../images/logocircular.png" alt="logo" class="logo"></a>
         <h1>Mateando así</h1>
@@ -52,51 +52,98 @@
         </div>
       </nav>
 
-    <main>
+  <main>
 
-        <h2>Pregunas Frecuentes</h2>
+    <h2>Pregunas Frecuentes</h2>
 
-        <ul  class="preguntasFrecuentes">
-            <div>
-                <li class="pregunta">¿Qué medios de pago aceptan?</li>
-                <p class="respuestas">Podes abonar en efectivo o mediante Mercado Pago con tarjeta de crédito, débito o medios habilitados. Elegí el que más te convenga.</p>
-            </div>
-
-            <div>
-                <li class="pregunta">¿Cómo son los envíos?</li>
-                <p class="respuestas">Podes optar por retiralo por nuestro taller en Colegiales u optar por alguno de nuestros métodos de envío: Moto mensajería (consultar costo adicional) o Correo Argentino.</p>
-            </div>
-
-            <div>
-                <li class="pregunta">¿Dónde puedo recibir mi pedido?</li>
-                <p class="respuestas">Hacemos envíos a todo el país.</p>
-            </div>
-
-            <div>
-                <li class="pregunta">¿Cuánto tarda en llegar el pedido?</li>
-                <p class="respuestas">El tiempo de entrega dependerá del tipo de envío seleccionado. Generalmente, la demora es de tres a siete días hábiles luego de la acreditación del pago.</p>
-            </div>  
-            
-            <div>
-                <li class="pregunta">¿Qué debo hacer si el producto no llega en buenas condiciones?</li>
-                <p class="respuestas">Escribinos en nuestra sección "Contactanos" o también podes enviar un mail a consultas@mateandoasi.com.ar y te enviaremos uno nuevo.</p>
-            </div>
-
-            <div>
-                <li class="pregunta">¿Cómo entregamos nuestros productos?</li>
-                <p class="respuestas">Nuestros productos se entregan con una bolsa y la impresión de nuestra marca, lista para que la entregues como un regalo.</p>
-            </div>
-        </ul>
-        
-    </main>
-
-    <footer>
-        <p>Envíos a todo el país</p>
-        <div class="linkInstagram">
-            <p>Encontranos acá</p>
-            <a href="https://www.instagram.com/mateando_asi/"><img src="../images/instagram.png" alt="instagram" class="instagram"></a>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            ¿Qué medios de pago aceptan?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Podes abonar en efectivo o mediante Mercado Pago con tarjeta de crédito, débito o medios habilitados. Elegí el que más te convenga.
+          </div>
         </div>
-    </footer>
+      </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          ¿Cómo son los envíos?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Podes optar por retiralo por nuestro taller en Colegiales u optar por alguno de nuestros métodos de envío: Moto mensajería (consultar costo adicional) o Correo Argentino.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          ¿Dónde puedo recibir mi pedido?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Hacemos envíos a todo el país.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          ¿Cuánto tarda en llegar el pedido?
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          El tiempo de entrega dependerá del tipo de envío seleccionado. Generalmente, la demora es de tres a siete días hábiles luego de la acreditación del pago.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          ¿Qué debo hacer si el producto no llega en buenas condiciones?
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Escribinos en nuestra sección "Contactanos" o también podes enviar un mail a consultas@mateandoasi.com.ar y te enviaremos uno nuevo.        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSix">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          ¿Qué debo hacer si el producto no llega en buenas condiciones?
+        </button>
+      </h2>
+      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+        <div class="accordion-body">  
+          Escribinos en nuestra sección "Contactanos" o también podes enviar un mail a consultas@mateandoasi.com.ar y te enviaremos uno nuevo.        </div>
+      </div>
+    </div>
+    
+    </div>
+
+
+  </main>
+
+
+  <footer>
+
+    <p>Envíos a todo el país</p>
+
+    <div>
+      <p>Encontranos acá</p>
+      <a href="https://www.instagram.com/mateando_asi/"><img src="../images/instagram.png" alt="instagram"></a>
+    </div>
+
+  </footer>
 
 </body>
 </html>

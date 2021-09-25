@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Urbanist:wght@200&display=swap" rel="stylesheet">
@@ -15,102 +14,111 @@
 </head>
 <body>
 
-    <header>
-        <a href="index.html"><img src="images/logocircular.png" alt="logo" class="logo"></a>
-        <h1>Mateando así</h1>
-    </header>
+  <header class="header">
+      <a href="index.html"><img src="images/logocircular.png" alt="logo" class="logo"></a>
+      <h1>Mateando así</h1>
+  </header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="menu container-fluid">
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="html/quienessomos.html">¿Quiénes somos?</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="html/productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="html/faq.html">¿Dudas?</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="html/contactanos.html">Contactanos</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="menu container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Menú</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/quienessomos.html">¿Quiénes somos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/faq.html">¿Dudas?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/contactanos.html">Contactanos</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <h2>¡Nuestros imperdibles!</h2>
+
+      <div class="container-fluid bloqueProductos">
+        <div class="card" >
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            ¡NUEVO!
+            <span class="visually-hidden">unread messages</span>
+          </span>
+          <img src="images/comboCopetineraCuencos.jpeg" class="card-img-top" alt="Combo Copetinera + 2 Cuencos">
+          <div class="card-body">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              ¡NUEVO!
+              <span class="visually-hidden">unread messages</span>
+            </span>
+            <p class="detalle card-title">Combo Copetinera + 2 Cuencos <br>$3000</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
           </div>
+        </div>         
+        
+      <div class="card" >
+          <img src="images/comboTablaCuencos.jpeg" class="card-img-top" alt="Combo Tabla 15x40 + 4 Cuencos">
+          <div class="card-body">
+            <p class="detalle card-title">Combo Copetinera + 2 Cuencos <br>$3300</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+      </div>    
+      
+      <div class="card" >
+          <img src="images/comboYerberoMate.jpeg" class="card-img-top" alt="Combo Dispenser + Mate de madera">
+          <div class="card-body">
+            <p class="detalle card-title">Combo Dispenser + Mate de madera <br>$3300</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+      </div> 
+      
+      <div class="card" >
+          <img src="images/comboMateYerbero.jpeg" alt="Combo Mate de Madera con Retrato + Yerbero + Azucarero">
+          <div class="card-body">
+            <p class="detalle card-title">Combo Mate de Madera con Retrato + Yerbero + Azucarero <br>$2000</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+      </div> 
+
+      <div class="container">
+        <div class="promo">
+              <img src="images/bombillas.jpeg" alt="bombillas" class="imagenBombilla">
+              <div>
+                  <h2>¿Y si sumamos una bombilla?</h2>
+                  <p class="bombilla">Podes sumar una bombilla a elección por solo $150</p>
+              </div>
         </div>
-      </nav>
+      </div>
+  </main>
+  
+  <footer>
+    <p>Envíos a todo el país</p>
 
-    <main>
+    <div>
+      <p>Encontranos acá</p>
+      <a href="https://www.instagram.com/mateando_asi/" target="_blank"><img src="images/instagram.png" alt="instagram"></a>
+    </div>   
 
-        <h2>¡Nuestros imperdibles!</h2>    
+  </footer>
 
-        <div class="container-fluid bloquePrincipal">
-            <div class="card" >
-                <img src="images/comboCopetineraCuencos.jpeg" class="card-img-top" alt="Combo Copetinera + 2 Cuencos">
-                <div class="card-body">
-                  <p class="detalle card-title">Combo Copetinera + 2 Cuencos <br>$3000</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
-              </div>         
-              
-            <div class="card" >
-                <img src="images/comboTablaCuencos.jpeg" class="card-img-top" alt="Combo Tabla 15x40 + 4 Cuencos">
-                <div class="card-body">
-                  <p class="detalle card-title">Combo Copetinera + 2 Cuencos <br>$3300</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>    
-            
-            <div class="card" >
-                <img src="images/comboYerberoMate.jpeg" class="card-img-top" alt="Combo Dispenser + Mate de madera">
-                <div class="card-body">
-                  <p class="detalle card-title">Combo Dispenser + Mate de madera <br>$3300</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
-            </div> 
-            
-            <div class="card" >
-                <img src="images/comboMateYerbero.jpeg" class="card-img-top" alt="Combo Mate de Madera con Retrato + Yerbero + Azucarero">
-                <div class="card-body">
-                  <p class="detalle card-title">Combo Mate de Madera con Retrato + Yerbero + Azucarero <br>$2000</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
-            </div> 
 
-        <div>
-            <div class="promo">
-                    <img src="images/bombillas.jpeg" alt="bombillas" class="imagenBombilla">
-                    <div>
-                        <h2>¿Y si sumamos una bombilla?</h2>
-                        <p class="bombilla">Podes sumar una bombilla a elección por solo $150</p>
-                    </div>
-            </div>        
-
-    </main>
-
-    <footer>
-
-        <p>Envíos a todo el país</p>
-
-        <div class="linkInstagram">
-            <p>Encontranos acá</p>
-            <a href="https://www.instagram.com/mateando_asi/" target="_blank"><img src="images/instagram.png" alt="instagram" class="instagram"></a>
-        </div>   
-
-    </footer>
-    <script src="https://michalsnik.github.io/aos/"> </script>
-
+  <script src="https://michalsnik.github.io/aos/"> </script>
 </body>
 </html>

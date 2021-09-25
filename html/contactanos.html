@@ -15,12 +15,12 @@
 </head>
 <body>
 
-    <header>
+  <header>
         <a href="../index.html"><img src="../images/logocircular.png" alt="logo" class="logo"></a>
         <h1>Mateando así</h1>
-    </header>
+  </header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="menu container-fluid">
           <a class="navbar-brand" href="#"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,57 +50,78 @@
             </form>
           </div>
         </div>
-      </nav>
+  </nav>
 
+  <main>
+    <h2>Contactate con nosotras</h2>
 
-    <main>
-        <h2>Contactate con nosotras</h2>
-
-        <div class="form container">
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label"><p>Nombre</p></label>
-                    <input type="nombre" class="form-control" id="exampleInputName1">
+    <div class="form container">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"><p>Nombre</p></label>
+                <input type="nombre" class="form-control" id="exampleInputName1">
+              </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"><p>Correo Electrónico</p></label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Nunca compartiremos tu correo con nadie.</div>
+            </div>
+            <div class="dropdown">
+                <p>Asunto</p>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  ----
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Métodos de pago</a></li>
+                  <li><a class="dropdown-item" href="#">Consultar stock</a></li>
+                  <li><a class="dropdown-item" href="#">Devoluciones</a></li>
+                  <li><a class="dropdown-item" href="#">Otro</a></li>
+                </ul>
+            </div>
+            <div>
+                <label for="mensaje"><p>Mensaje</p></label><br>
+                <textarea name="" class="comentario" cols="30" rows="10"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Soy mayorista</label>
+            </div>
+            <div class="botones mb-3 form-check">
+              <p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                  Enviar
+                </button>
+              </p>
+              <div style="min-height: 120px;">
+                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                  <div class="card card-body" style="width: 300px;">
+                    Gracias por escribirnos, ¡te responderemos cuanto antes!
                   </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"><p>Correo Electrónico</p></label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">Nunca compartiremos tu correo con nadie.</div>
                 </div>
-                <div class="dropdown">
-                    <p>Asunto</p>
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      ----
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#">Métodos de pago</a></li>
-                      <li><a class="dropdown-item" href="#">Consultar stock</a></li>
-                      <li><a class="dropdown-item" href="#">Devoluciones</a></li>
-                      <li><a class="dropdown-item" href="#">Otro</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <label for="mensaje"><p>Mensaje</p></label><br>
-                    <textarea name="" class="comentario" cols="30" rows="10"></textarea>
-                </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Soy mayorista</label>
-                </div>
-                <div class="botones mb-3 form-check">
-                    <input type="submit" value="Enviar" class="enviar"><br>
-                    <input type="reset" value="Borrar" class="borrar">
-                </div>
-            </form>
-        </div>
+              </div>
+                <input type="reset" value="Borrar" class="borrar">
+            </div>
+        </form>
+    </div>
+
+
+  </main>
+
+<!--
+    <main>
+        
     </main>
+-->
 
     <footer>
+
         <p>Envíos a todo el país</p>
+
         <div class="linkInstagram">
             <p>Encontranos acá</p>
             <a href="https://www.instagram.com/mateando_asi/"><img src="../images/instagram.png" alt="instagram" class="instagram"></a>
         </div>
+
     </footer>
 
 </body>
