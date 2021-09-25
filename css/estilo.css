@@ -10,10 +10,255 @@
     padding: 0;
 }
 
-.header{
-    background-color: red;
+h2{
+    font-size: 40px;
+    font-family: 'Urbanist', sans-serif;
+    margin: 40px 0px 0px 30px !important;
+    color: #7B3F23; 
 }
 
+body{
+    background-color: rgb(248, 248, 233) !important;
+}
+
+p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;  
+}
+
+/*HEADER*/
+
+.header{
+    background-color: #B66A46;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.titulo{
+    color: #F6E8DC;
+    font-size: 80px;
+    font-family:'Urbanist', sans-serif;
+}
+
+.logo{
+    height: 150px;
+    width: 150px;   
+}
+
+
+/*FOOTER*/
+
+.footer{
+    background-color: #777165;
+    height: 75px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px 0px 30px;
+}
+
+.instagram{
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    border-radius: 0%;
+}
+
+.linkInstagram{
+    display: flex;
+    justify-content: end;
+    align-items: center; 
+}
+
+
+/*NAV*/
+
+.bg-light{
+    background-color: #777165 !important; 
+    height: 50px;
+    position: sticky;
+    top: 0px;
+    margin-top: 0px;   
+}
+
+.navbar-toggler{
+    margin-bottom: 10px;
+}
+
+.navbar-brand{
+    margin-bottom: 5px;
+}
+
+.nav-link, .active, .navbar-brand{
+    color: #F6E8DC !important; 
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.navbar> .container-fluid{
+    background-color: #777165;
+    position: sticky; 
+}
+
+.navbar-light{
+    margin: 0px;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdown-menu{
+    z-index: 1;
+    background-color: #fff;
+}
+
+.menu{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+.detalle{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.nav-item{
+    font-family: 'Urbanist', sans-serif;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-image: linear-gradient(#F6E8DC, #F6E8DC);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: 20px .3s;
+}
+
+
+/*------------------- HOME -------------------*/
+.imagenBombilla{
+    height: 200px;
+    width: 250px;
+}
+
+.bloqueProductos{
+    margin: 40px 0px 60px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-img-top{
+    height: 300px;
+    width: 200px !important;
+    border-radius: 10px;
+    margin: 20px  auto;  
+}
+
+.card{
+    height: 500px !important;
+    width: 300px;
+    margin: 20px 5px 20px 5px; 
+    background-color:white;
+    border:1px solid #f1efef;
+    border-radius: 10px;
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    z-index: -1;
+}
+
+.d-flex{
+    margin: 10px 5px 0px 0px;
+}
+
+.form-control{
+    height: 40px;
+}
+
+.btn-primary{
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #42403b;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.btn-primary:hover{
+    background-color: #fff;
+    box-shadow: 0px 15px 20px #42403b;
+    color: #fff;
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.btn-outline-success{
+    color: #F6E8DC !important;
+    border-color: #F6E8DC !important;
+}
+
+.btn-outline-success:hover{
+    background-color: #F6E8DC !important;
+    color: #42403b !important; 
+    border-color: #F6E8DC !important;
+}
+
+.btn {
+    margin: 0px 0px 10px 10px;
+}
+
+.promo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:white;
+    padding: 10px;
+    border:1px solid #f1efef;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.bombilla{
+    margin: 0px 0px 50px 50px;
+}
+
+/*-------------- QUIENES SOMOS --------------*/
+
+/*---------------- PRODUCTOS ----------------*/
+
+/*------------------ DUDAS ------------------*/
+
+/*--------------- CONTACTANOS ---------------*/
+
+
+/*
 video{
     height: 400px;
     width: 200px;
@@ -63,4 +308,4 @@ main{
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-}
+}*/
