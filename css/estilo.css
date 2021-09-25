@@ -17,6 +17,12 @@ h2{
     color: #7B3F23; 
 }
 
+h3{
+    font-family: 'Urbanist', sans-serif;
+    color: #7B3F23;
+    margin: 60px 0px 30px 40px !important;
+}
+
 body{
     background-color: rgb(248, 248, 233) !important;
 }
@@ -72,6 +78,11 @@ p{
     display: flex;
     justify-content: end;
     align-items: center; 
+}
+
+.instagram:hover{
+    transition-duration: 500ms;
+    transform: scale(1.1,1.1);
 }
 
 
@@ -132,7 +143,7 @@ p{
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
-
+    color: #42403b;
 }
 
 .nav-item{
@@ -145,6 +156,14 @@ p{
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: 20px .3s;
+}
+
+.nav-item:hover{
+    transition-duration: 500ms;
+}
+
+.nav-item:hover, .nav-item:focus{
+    background-size: 100% 2px;
 }
 
 
@@ -190,9 +209,13 @@ p{
     height: 40px;
 }
 
+.comprar{
+    width: 100px !important;
+    height: 30px !important;
+}
+
 .btn-primary{
-    width: 100px;
-    height: 30px;
+    
     padding: 5px;
     margin-bottom: 10px;
     font-family: 'Urbanist', sans-serif;
@@ -200,14 +223,15 @@ p{
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-weight: 500;
-    color: #fff;
-    background-color: #42403b;
+    color: #fff !important;
+    background-color: #42403b !important;
     border: none;
-    border-radius: 45px;
+    border-radius: 45px !important;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
+    border-color: #42403b !important;
 }
 
 
@@ -296,6 +320,29 @@ p{
     
 
 /*---------------- PRODUCTOS ----------------*/
+
+.mates{
+    margin: 40px 0px 60px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.slide{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.aclaracion{
+    font-style: italic;
+    text-align: center;
+    margin: 40px 0px 40px 0px;
+}
 
 /*------------------ DUDAS ------------------*/
 
