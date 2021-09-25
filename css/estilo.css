@@ -251,6 +251,50 @@ p{
 
 /*-------------- QUIENES SOMOS --------------*/
 
+.containerCarta, .containerVideo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px 50px 50px;
+    flex-wrap: wrap;
+}
+
+.solProductos{
+    height: 450px;
+    width: 500px;
+}
+
+.cartaUno{
+    margin-left: 30px;
+    line-height : 50px;
+}
+
+.frase{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 450;
+    font-family: 'Urbanist' sans-serif;
+    text-align: center;
+    margin: 50px 0px 0px 50px;
+}
+
+.video{
+    border-radius: 10px;
+    height: 400px;
+    width: 400px;
+}
+
+.cartaDos{
+    margin-left: 30px;
+    line-height : 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+    
+
 /*---------------- PRODUCTOS ----------------*/
 
 /*------------------ DUDAS ------------------*/
