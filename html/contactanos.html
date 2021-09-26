@@ -15,9 +15,9 @@
 </head>
 <body>
 
-  <header>
+  <header class="header">
         <a href="../index.html"><img src="../images/logocircular.png" alt="logo" class="logo"></a>
-        <h1>Mateando así</h1>
+        <h1 class="titulo">Mateando así</h1>
   </header>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -66,7 +66,7 @@
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               <div id="emailHelp" class="form-text">Nunca compartiremos tu correo con nadie.</div>
             </div>
-            <div class="dropdown">
+            <div class="dropdownAsunto">
                 <p>Asunto</p>
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   ----
@@ -88,7 +88,7 @@
             </div>
             <div class="botones mb-3 form-check">
               <p>
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                <button class="btn btn-primary enviar" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
                   Enviar
                 </button>
               </p>
@@ -98,8 +98,14 @@
                     Gracias por escribirnos, ¡te responderemos cuanto antes!
                   </div>
                 </div>
-              </div>
-                <input type="reset" value="Borrar" class="borrar">
+            <div class="botones mb-3 form-check">
+                  <p>
+                    <button class="btn btn-primary borrar" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                      Borrar
+                    </button>
+                  </p>
+            </div>
+                <!--<input type="reset" value="Borrar" class="borrar">-->
             </div>
         </form>
     </div>
@@ -107,13 +113,8 @@
 
   </main>
 
-<!--
-    <main>
-        
-    </main>
--->
 
-    <footer>
+    <footer class="footer">
 
         <p>Envíos a todo el país</p>
 

@@ -344,14 +344,98 @@ p{
     margin: 40px 0px 40px 0px;
 }
 
+
+/*------------------ DUDAS ------------------*/
+
 .accordion{
     margin: 10%;
 }
 
-/*------------------ DUDAS ------------------*/
+
+.preguntasFrecuentes{
+    display: inline-block;
+    margin: 30px 0px 30px 40px;
+}
+
 
 /*--------------- CONTACTANOS ---------------*/
 
+
+input{
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.comentario{
+    margin-bottom: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+
+.botones{
+    display: inline-block;
+    margin-left: 190px;
+}
+
+
+.enviar, .borrar{
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #42403b;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.nombreUsuario, .mailUsuario, .opcion{
+    margin-bottom: 10px;
+    height: 20px;
+    width: 200px;
+    font-family: 'Urbanist', sans-serif;
+    box-shadow: none;
+}
+
+
+.enviar:hover, .borrar:hover{
+    background-color: #777165;
+    box-shadow: 0px 15px 20px #8d998e;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+
+
+.link:hover{
+    transition-duration: 200ms;
+    color: white;
+}
+
+.dropdownAsunto{
+    z-index: -1;
+}
 
 /*
 video{
