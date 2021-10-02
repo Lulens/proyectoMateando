@@ -18,6 +18,8 @@
     }
 }
 
+
+
 /*HEADER*/
 .header{
     background-color: $marron-naranjoso;
@@ -82,14 +84,14 @@
 .bg-light{
     background-color: $verde-musgo !important; 
     height: 50px;
-    position: sticky;
+    position: sticky !important;
     top: 0px;
     margin-top: 0px;   
 }
 
 .navbar> .container-fluid{
     background-color: $verde-musgo;
-    position: sticky;
+    
     
     .navbar-brand{
         margin-bottom: 5px;
@@ -183,6 +185,8 @@
 }
 
 /*BUTTONS*/
+
+
 .btn-primary{
     padding: 5px;
     margin-bottom: 10px;
@@ -210,8 +214,10 @@
 }
 
 .btn-outline-success{
+    @extend .btn-primary;
     color: $blanco-crema !important;
     border-color: $blanco-crema !important;
+    box-shadow: none !important;
 
     &:hover{
         background-color: $blanco-crema !important;
@@ -219,6 +225,7 @@
         border-color: $blanco-crema !important;
     }
 }
+
 
 /*------------------- HOME -------------------*/
 .bloqueProductos{
