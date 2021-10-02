@@ -15,7 +15,7 @@
 .header {
   background-color: #B66A46;
   height: 200px;
-  padding: 0 60px;
+  padding: 10px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,6 +27,12 @@
   .header .logo {
     height: 140px;
     width: 140px; }
+
+@media (max-width: 768px) {
+  header {
+    justify-content: center !important; }
+  .titulo {
+    display: none !important; } }
 
 /*FOOTER*/
 .footer {
@@ -47,7 +53,8 @@
       height: 40px;
       width: 40px;
       margin-left: 10px;
-      border-radius: 0%; }
+      border-radius: 0%;
+      color: #fff !important; }
       .footer .instagram .link:hover {
         transition-duration: 500ms;
         transform: scale(1.1, 1.1); }
@@ -69,7 +76,7 @@
   .navbar > .container-fluid .navbar-brand {
     margin-bottom: 5px; }
   .navbar > .container-fluid .navbar-toggler {
-    margin-bottom: 10px; }
+    margin: 10px 0px 10px 0px; }
   .navbar > .container-fluid .d-flex {
     margin: 10px 10px 10px 0px; }
     .navbar > .container-fluid .d-flex .form-control {
@@ -166,6 +173,9 @@
     color: #42403b !important;
     border-color: #F6E8DC !important; }
 
+.contenedorCarrusel {
+  background-color: #ced4da; }
+
 /*------------------- HOME -------------------*/
 .bloqueProductos {
   margin: 40px 0px 60px 0px;
@@ -178,6 +188,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   background-color: white;
   padding: 10px;
   border: 1px solid #f1efef;
@@ -244,7 +255,9 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  height: 600px;
+  background-color: #9e9d98 !important; }
 
 .productos .aclaracion {
   font-style: italic;
