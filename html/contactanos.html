@@ -45,14 +45,14 @@
               </li>
             </ul>
             <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <input class="form-control me-2" type="search" placeholder="Ingresá un producto" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
           </div>
         </div>
   </nav>
 
-  <main>
+  <main class="contacto">
     <h2>Contactate con nosotras</h2>
 
     <div class="form container">
@@ -62,7 +62,7 @@
                 <input type="nombre" class="form-control" id="exampleInputName1">
               </div>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label"><p>Correo Electrónico</p></label>
+              <label for="exampleInputEmail1" class="form-label"><p>Correo electrónico</p></label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               <div id="emailHelp" class="form-text">Nunca compartiremos tu correo con nadie.</div>
             </div>
@@ -86,26 +86,27 @@
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Soy mayorista</label>
             </div>
-            <div class="botones mb-3 form-check">
-              <p>
-                <button class="btn btn-primary enviar" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-                  Enviar
-                </button>
-              </p>
-              <div style="min-height: 120px;">
+            
+            <div class="botones">
+              <div class="mb-3 form-check">
+                <p><button class="btn btn-primary enviar" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                    Enviar
+                </button></p>
+              </div>
+
+              <div class="mb-3 form-check">
+                <p><button class="btn btn-primary borrar" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                    Borrar
+                </button></p>
+              </div>
+
+              <div class="agradecimiento"> 
                 <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                  <div class="card card-body" style="width: 300px;">
+                  <p class="texto">
                     Gracias por escribirnos, ¡te responderemos cuanto antes!
-                  </div>
-                </div>
-            <div class="botones mb-3 form-check">
-                  <p>
-                    <button class="btn btn-primary borrar" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-                      Borrar
-                    </button>
                   </p>
-            </div>
-                <!--<input type="reset" value="Borrar" class="borrar">-->
+                </div>
+              </div>
             </div>
         </form>
     </div>
@@ -113,17 +114,14 @@
 
   </main>
 
+  <footer class="footer">
+    <p>Envíos a todo el país</p>
 
-    <footer class="footer">
-
-        <p>Envíos a todo el país</p>
-
-        <div class="linkInstagram">
-            <p>Encontranos acá</p>
-            <a href="https://www.instagram.com/mateando_asi/"><img src="../images/instagram.png" alt="instagram" class="instagram"></a>
-        </div>
-
-    </footer>
+    <div class="instagram">
+      <p>Encontranos acá</p>
+      <a href="https://www.instagram.com/mateando_asi/" target="_blank"><img src="../images/instagram.png" alt="instagram" class="link"></a>
+    </div>   
+  </footer>
 
 </body>
 </html>
