@@ -1,4 +1,5 @@
 @import 'variables.scss';
+@import 'extend.scss';
 
 *{
     margin: 0;
@@ -40,17 +41,6 @@
         height: 140px;
         width: 140px;   
     }
-}
-
-@media (max-width: 768px){
-    header{
-        
-        justify-content: center !important;
-    }  
-    .titulo{
-        display: none !important;
-    }
-
 }
 
 /*FOOTER*/
@@ -157,6 +147,7 @@
         background-size: 100% 2px;
     }
 }
+
 /*CARDS*/
 .card{
     height: 500px !important;
@@ -179,41 +170,103 @@
         justify-content: space-between;
         align-items: center;
 
-        .detalle{
-            font-family: $fuente-textos;
-            font-size: $tamanio-texto;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            text-align: center;
-            color: #42403b;
-        }
-
         .badge{
             z-index: 8 !important;
         }
+
+        @extend .detalle;
     }
 
 }
 
+/*CARRUSEL*/
+
+.carousel{
+    background-color: rgb(207, 207, 207);
+    height: 500px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+
+    .slide{
+        display: flex;
+        justify-content: center;
+    
+        .cardHorizontal{
+            height: 400px !important;
+            width: 700px;
+            background-color: white;
+            display: flex; 
+            flex-direction: row; 
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 5px;
+        
+            .fotoCarrusel{
+                height: 300px;
+                width: 200px !important;
+                border-radius: 10px;
+            }
+
+            .card-body{
+                flex: none !important;
+                @extend .detalle;
+            }
+        
+            
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    header{
+        justify-content: center !important;
+    }  
+
+    .titulo{
+        display: none !important;
+    }
+
+    .carousel{   
+        height: 600px !important;
+        
+        .slide{
+
+            .cardHorizontal{
+                /*position: relative;
+                display: flex;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-clip: border-box;*/
+                height: 500px !important;
+                width: 300px;
+                margin: 20px 5px 20px 5px;
+                flex-direction: column;
+    
+                .fotoCarrusel{
+                   margin: 20px  auto;
+                }
+    
+                .card-body{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;  
+                }
+            }
+        }
+    }
+
+
+}
+
+
 /*BUTTONS*/
 .btn-primary{
-    padding: 5px;
-    margin-bottom: 10px;
-    font-family: $fuente-titulos;
-    font-size: 12px !important;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    color: #fff !important;
-    background-color: #42403b !important;
-    border-radius: 45px !important;
-    border-color: #42403b !important;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
-
+    @extend .boton;
+    
     &:hover{
         background-color: #fff;
         box-shadow: 0px 15px 20px #42403b;
@@ -223,8 +276,10 @@
     }
 }
 
+
+
 .btn-outline-success{
-    @extend .btn-primary;
+    @extend .boton;
     color: $blanco-crema !important;
     border-color: $blanco-crema !important;
     box-shadow: none !important;
@@ -337,15 +392,6 @@
         flex-wrap: wrap;
     }
     
-    .slide{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        height: 600px;
-        background-color: #9e9d98 !important;
-    }
-    
     .aclaracion{
         font-style: italic;
         text-align: center;
@@ -440,6 +486,5 @@
             }
         }
     }    
-    
-
 }
+

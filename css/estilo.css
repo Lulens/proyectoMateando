@@ -1,3 +1,29 @@
+.detalle, .card .card-body, .carousel .slide .cardHorizontal .card-body {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  color: #42403b; }
+
+.boton, .btn-primary, .btn-outline-success {
+  padding: 5px;
+  margin-bottom: 10px;
+  font-family: "Urbanist", sans-serif;
+  font-size: 12px !important;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #fff !important;
+  background-color: #42403b !important;
+  border-radius: 45px !important;
+  border-color: #42403b !important;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none; }
+
 * {
   margin: 0;
   padding: 0;
@@ -27,12 +53,6 @@
   .header .logo {
     height: 140px;
     width: 140px; }
-
-@media (max-width: 768px) {
-  header {
-    justify-content: center !important; }
-  .titulo {
-    display: none !important; } }
 
 /*FOOTER*/
 .footer {
@@ -129,40 +149,68 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center; }
-    .card .card-body .detalle {
-      font-family: "Nunito", sans-serif;
-      font-size: 18px;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      text-align: center;
-      color: #42403b; }
     .card .card-body .badge {
       z-index: 8 !important; }
 
+/*CARRUSEL*/
+.carousel {
+  background-color: #cfcfcf;
+  height: 500px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .carousel .slide {
+    display: flex;
+    justify-content: center; }
+    .carousel .slide .cardHorizontal {
+      height: 400px !important;
+      width: 700px;
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 5px; }
+      .carousel .slide .cardHorizontal .fotoCarrusel {
+        height: 300px;
+        width: 200px !important;
+        border-radius: 10px; }
+      .carousel .slide .cardHorizontal .card-body {
+        flex: none !important; }
+
+@media (max-width: 768px) {
+  header {
+    justify-content: center !important; }
+  .titulo {
+    display: none !important; }
+  .carousel {
+    height: 600px !important; }
+    .carousel .slide .cardHorizontal {
+      /*position: relative;
+                display: flex;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-clip: border-box;*/
+      height: 500px !important;
+      width: 300px;
+      margin: 20px 5px 20px 5px;
+      flex-direction: column; }
+      .carousel .slide .cardHorizontal .fotoCarrusel {
+        margin: 20px  auto; }
+      .carousel .slide .cardHorizontal .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; } }
+
 /*BUTTONS*/
-.btn-primary, .btn-outline-success {
-  padding: 5px;
-  margin-bottom: 10px;
-  font-family: "Urbanist", sans-serif;
-  font-size: 12px !important;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  color: #fff !important;
-  background-color: #42403b !important;
-  border-radius: 45px !important;
-  border-color: #42403b !important;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none; }
-  .btn-primary:hover, .btn-outline-success:hover {
-    background-color: #fff;
-    box-shadow: 0px 15px 20px #42403b;
-    color: #fff;
-    transform: translateY(-3px);
-    cursor: pointer; }
+.btn-primary:hover {
+  background-color: #fff;
+  box-shadow: 0px 15px 20px #42403b;
+  color: #fff;
+  transform: translateY(-3px);
+  cursor: pointer; }
 
 .btn-outline-success {
   color: #F6E8DC !important;
@@ -250,14 +298,6 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap; }
-
-.productos .slide {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 600px;
-  background-color: #9e9d98 !important; }
 
 .productos .aclaracion {
   font-style: italic;
