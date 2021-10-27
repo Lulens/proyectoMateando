@@ -63,7 +63,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px 30px 0px 30px; }
-  .footer p {
+  .footer .parrafoFooter {
     margin: 0 6px 0 0; }
   .footer .instagram {
     display: flex;
@@ -101,7 +101,10 @@
     margin: 10px 10px 10px 0px; }
     .navbar > .container-fluid .d-flex .form-control {
       height: 40px;
-      font-family: "Nunito", sans-serif !important; }
+      font-family: "Nunito", sans-serif !important;
+      border-radius: 45px !important; }
+    .navbar > .container-fluid .d-flex .me-2 {
+      box-shadow: none !important; }
 
 .menu {
   position: absolute;
@@ -186,12 +189,6 @@
   .carousel {
     height: 600px !important; }
     .carousel .slide .cardHorizontal {
-      /*position: relative;
-                display: flex;
-                flex-direction: column;
-                min-width: 0;
-                word-wrap: break-word;
-                background-clip: border-box;*/
       height: 500px !important;
       width: 300px;
       margin: 20px 5px 20px 5px;
@@ -202,7 +199,17 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center; } }
+        align-items: center; }
+  .containerCarta, .containerVideo {
+    margin-top: 20px !important; }
+    .containerCarta .cartaUno, .containerVideo .cartaUno {
+      width: 100% !important;
+      margin-top: 10px !important; }
+    .containerCarta .cartaDos, .containerVideo .cartaDos {
+      width: 100% !important;
+      margin-bottom: 10px; }
+  .footer .instagram .parrafoFooter {
+    display: none !important; } }
 
 /*BUTTONS*/
 .btn-primary:hover {
@@ -213,6 +220,7 @@
   cursor: pointer; }
 
 .btn-outline-success {
+  padding: 10px !important;
   color: #F6E8DC !important;
   border-color: #F6E8DC !important;
   box-shadow: none !important; }
@@ -222,7 +230,7 @@
     border-color: #F6E8DC !important; }
 
 .contenedorCarrusel {
-  background-color: #ced4da; }
+  background-color: #F6E8DC; }
 
 /*------------------- HOME -------------------*/
 .bloqueProductos {
@@ -272,18 +280,20 @@
     height: 400px;
     width: 400px; }
 
-.frase {
-  font-size: 22px;
-  font-style: italic;
-  font-weight: 450;
-  font-family: "Urbanist", sans-serif;
-  text-align: center;
-  margin: 40px auto;
-  padding: 20px 0;
-  width: 72%;
-  color: #7B3F23;
-  border-top: #7B3F23 1px dashed;
-  border-bottom: #7B3F23 1px dashed; }
+.containerFrase {
+  display: flex;
+  justify-content: center; }
+  .containerFrase .frase {
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 450;
+    font-family: "Urbanist", sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    width: 72%;
+    color: #7B3F23;
+    border-top: #7B3F23 1px dashed;
+    border-bottom: #7B3F23 1px dashed; }
 
 /*---------------- PRODUCTOS ----------------*/
 .productos .nombreSeccion {
@@ -310,6 +320,16 @@
   font-family: "Nunito", sans-serif !important; }
   .preguntasFrecuentes .accordion h2 {
     margin: 0 !important; }
+  .preguntasFrecuentes .accordion .accordion-button {
+    background-color: #C98A6C;
+    color: #F6E8DC; }
+    .preguntasFrecuentes .accordion .accordion-button::after {
+      box-shadow: #F6E8DC; }
+    .preguntasFrecuentes .accordion .accordion-button:not(.collapsed)::after {
+      background-color: #F6E8DC !important;
+      box-shadow: #F6E8DC !important; }
+    .preguntasFrecuentes .accordion .accordion-button::after {
+      color: #F6E8DC !important; }
 
 /*---------------- CONTACTO ----------------*/
 .contacto .form {

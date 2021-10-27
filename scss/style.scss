@@ -9,6 +9,7 @@
 
     body{
         background-color: rgb(248, 248, 233) !important;
+        
 
         h2{
             font-size: $tamanio-subtitulo;
@@ -17,9 +18,8 @@
             color: $marron; 
         }
     }
+
 }
-
-
 
 /*HEADER*/
 .header{
@@ -53,7 +53,7 @@
     align-items: center;
     padding: 0px 30px 0px 30px;
     
-    p{
+    .parrafoFooter{
         margin: 0 6px 0 0;
     }
 
@@ -109,6 +109,11 @@
         .form-control{
             height: 40px;
             font-family: $fuente-textos !important;
+            border-radius: 45px !important;
+        }
+
+        .me-2{
+            box-shadow: none !important;
         }
     }
 }
@@ -234,12 +239,6 @@
         .slide{
 
             .cardHorizontal{
-                /*position: relative;
-                display: flex;
-                flex-direction: column;
-                min-width: 0;
-                word-wrap: break-word;
-                background-clip: border-box;*/
                 height: 500px !important;
                 width: 300px;
                 margin: 20px 5px 20px 5px;
@@ -259,6 +258,27 @@
         }
     }
 
+    .containerCarta, .containerVideo{
+        margin-top: 20px !important;
+
+        .cartaUno{      
+            width: 100% !important;
+            margin-top: 10px !important;
+        }
+    
+        .cartaDos{
+            width: 100% !important;
+            margin-bottom: 10px;
+        } 
+    }
+
+    .footer{
+        .instagram{
+            .parrafoFooter{
+                display: none !important;
+            }
+        }
+    }
 
 }
 
@@ -280,6 +300,7 @@
 
 .btn-outline-success{
     @extend .boton;
+    padding: 10px !important;
     color: $blanco-crema !important;
     border-color: $blanco-crema !important;
     box-shadow: none !important;
@@ -292,7 +313,7 @@
 }
 
 .contenedorCarrusel{
-    background-color: #ced4da;
+    background-color: $blanco-crema;//#ced4da;
 }
 /*------------------- HOME -------------------*/
 .bloqueProductos{
@@ -358,20 +379,26 @@
         height: 400px;
         width: 400px;
     }
+
+
 }
 
-.frase{
-    font-size: 22px;
-    font-style: italic;
-    font-weight: 450;
-    font-family: $fuente-titulos;
-    text-align: center;
-    margin: 40px auto;
-    padding: 20px 0;
-    width: 72%;
-    color: $marron;
-    border-top: $marron 1px dashed;
-    border-bottom: $marron 1px dashed;
+.containerFrase{
+    display: flex;
+    justify-content: center;
+
+    .frase{
+        font-size: 22px;
+        font-style: italic;
+        font-weight: 450;
+        font-family: $fuente-titulos;
+        text-align: center;
+        padding: 20px 0;
+        width: 72%;
+        color: $marron;
+        border-top: $marron 1px dashed;
+        border-bottom: $marron 1px dashed;
+    }
 }
 
 /*---------------- PRODUCTOS ----------------*/
@@ -411,8 +438,29 @@
         h2{
             margin: 0 !important;
         }
+
+        .accordion-button{
+            background-color: $marron-rosaceo;
+            color: $blanco-crema;
+
+            &::after{
+                box-shadow: $blanco-crema;
+            }
+
+            &:not(.collapsed)::after {
+                background-color: $blanco-crema !important;
+                box-shadow: $blanco-crema !important;
+              }
+            &::after {
+                color: $blanco-crema !important;
+              }
+        }
+
     }
 }
+
+
+
 
 /*---------------- CONTACTO ----------------*/
 
