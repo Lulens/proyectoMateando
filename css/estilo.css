@@ -153,7 +153,8 @@
     justify-content: space-between;
     align-items: center; }
     .card .card-body .badge {
-      z-index: 8 !important; }
+      z-index: 8 !important;
+      background-color: green !important; }
 
 /*CARRUSEL*/
 .carousel {
