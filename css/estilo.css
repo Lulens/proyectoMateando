@@ -69,13 +69,13 @@
     display: flex;
     justify-content: end;
     align-items: center; }
-    .footer .instagram .link {
+    .footer .instagram .bi {
       height: 40px;
       width: 40px;
       margin-left: 10px;
       border-radius: 0%;
       color: #fff !important; }
-      .footer .instagram .link:hover {
+      .footer .instagram .bi:hover {
         transition-duration: 500ms;
         transform: scale(1.1, 1.1); }
 
@@ -157,7 +157,7 @@
 
 /*CARRUSEL*/
 .carousel {
-  background-color: #cfcfcf;
+  background-color: #c4c1bb;
   height: 500px !important;
   display: flex;
   align-items: center;
@@ -322,14 +322,11 @@
     margin: 0 !important; }
   .preguntasFrecuentes .accordion .accordion-button {
     background-color: #C98A6C;
-    color: #F6E8DC; }
-    .preguntasFrecuentes .accordion .accordion-button::after {
-      box-shadow: #F6E8DC; }
+    color: black; }
+    .preguntasFrecuentes .accordion .accordion-button:focus {
+      box-shadow: none; }
     .preguntasFrecuentes .accordion .accordion-button:not(.collapsed)::after {
-      background-color: #F6E8DC !important;
-      box-shadow: #F6E8DC !important; }
-    .preguntasFrecuentes .accordion .accordion-button::after {
-      color: #F6E8DC !important; }
+      background-image: none; }
 
 /*---------------- CONTACTO ----------------*/
 .contacto .form {
